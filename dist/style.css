@@ -1,0 +1,225 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  padding: 9.25rem 1.5rem;
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(#af67e9, #6565e7);
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+
+@media (min-width: 75em) {
+  body {
+    padding: 0;
+  }
+}
+
+h1, p {
+  margin: 0;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.faq {
+  background-image: url(../images/bg-pattern-mobile.svg);
+  background-color: white;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 15rem;
+  border-radius: 1.5rem;
+}
+
+.faq .box-image {
+  display: none;
+}
+
+@media (min-width: 75em) {
+  .faq {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    max-width: 57.5rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-size: 100%;
+    background-position: top 67% right 44vw;
+  }
+  .faq > * {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+  }
+  .faq .box-image {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 57%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+  }
+}
+
+.faq__image {
+  position: relative;
+}
+
+.faq__image img {
+  position: absolute;
+  top: -6rem;
+  left: 46%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+  max-width: 15rem;
+  height: auto;
+}
+
+@media (min-width: 75rem) {
+  .faq__image img {
+    position: unset;
+    -webkit-transform: unset;
+            transform: unset;
+    max-width: 30rem;
+  }
+}
+
+.faq__image .desktop-image {
+  display: none;
+}
+
+@media (min-width: 75em) {
+  .faq__image {
+    overflow: hidden;
+  }
+  .faq__image .mobile-image {
+    display: none;
+  }
+  .faq__image .desktop-image {
+    display: block;
+    margin-left: -5rem;
+  }
+}
+
+.faq__text {
+  padding: 8.625rem 1.375rem 2.875rem;
+}
+
+.faq__text h1 {
+  color: #1d1e35;
+  font-size: 1.875rem;
+  text-align: center;
+}
+
+@media (min-width: 75rem) {
+  .faq__text {
+    padding: 4.375rem 5.875rem 5.25rem 0;
+  }
+  .faq__text h1 {
+    text-align: left;
+  }
+}
+
+.faq__text .accordion__item {
+  border-bottom: 1px solid #e7e7e9;
+}
+
+.faq__text .accordion__question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  width: 100%;
+  padding: 0;
+  text-align: left;
+  font-family: 'Kumbh Sans', sans-serif;
+  color: #4a4b5e;
+  border: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+}
+
+.faq__text .accordion__question::after {
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  content: "";
+  margin-right: 1rem;
+  background-image: url(../images/icon-arrow-down.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+}
+
+.faq__text .accordion .open {
+  font-weight: 700;
+}
+
+.faq__text .accordion .open::after {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.faq__text .accordion__collapse {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 300ms ease-in-out;
+  transition: max-height 300ms ease-in-out;
+}
+
+.faq__text .accordion__collapse p {
+  margin-bottom: 0.875rem;
+  color: #787887;
+}
+/*# sourceMappingURL=style.css.map */
