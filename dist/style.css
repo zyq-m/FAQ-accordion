@@ -167,6 +167,10 @@ h1, p {
   border-bottom: 1px solid #e7e7e9;
 }
 
+.faq__text .accordion__header:hover {
+  color: #f47c57;
+}
+
 .faq__text .accordion__question {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -185,6 +189,10 @@ h1, p {
       -ms-flex-align: center;
           align-items: center;
   background-color: transparent;
+}
+
+.faq__text .accordion__question:hover {
+  color: #f47c57;
 }
 
 .faq__text .accordion__question::after {
