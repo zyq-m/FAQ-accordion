@@ -8,6 +8,7 @@ Completing front-end mentor challenges is a fun things to do during spare time.
 
 - HTML
 - SCSS
+- Live Sass Compiler
 
 ## What I learned?
 
